@@ -1,0 +1,177 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+body {
+  background: rgba(32, 33, 36, 1);
+  color: rgba(232, 234, 237, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.para-author {
+  font-family: 'Caveat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.github-link {
+  font-family: 'Caveat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(214, 123, 3, 1) 10%,
+    rgba(214, 141, 3, 1) 20%,
+    rgba(249, 235, 22, 1) 30%,
+    rgba(109, 161, 65, 1) 40%,
+    rgba(56, 196, 152, 1) 50%,
+    rgba(30, 84, 190, 1) 60%,
+    rgba(149, 28, 204, 1) 70%,
+    rgba(201, 37, 137, 1) 80%,
+    rgba(219, 13, 83, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.github-logo {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 62px;
+  opacity: 0.9;
+  transition: transform 0.4s ease-in-out;
+}
+
+.github-logo:hover {
+  transform: rotate(720deg);
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 50px 0px 50px;
+  padding: 5px;
+}
+
+.album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.album img {
+  width: 600px;
+  height: auto;
+}
+
+.slider-img {
+  display: none;
+}
+
+.active-img {
+  display: block;
+}
+
+svg path {
+  fill: rgba(232, 234, 237, 1);
+}
+
+.arrow {
+  border-radius: 5px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.arrow:hover {
+  background-color: rgba(232, 234, 237, 0.2);
+  cursor: pointer;
+}
+
+.previous {
+  margin-right: 30px;
+}
+
+.next {
+  margin-left: 30px;
+}
+
+.image-nav {
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-dots {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: rgba(232, 234, 237, 0.4);
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav-dots:hover {
+  cursor: pointer;
+  background-color: rgba(232, 234, 237, 0.2);
+}
+
+.active-dot {
+  background-color: rgb(216, 173, 0);
+}
+
+.active-dot:hover {
+  background-color: rgb(216, 173, 0);
+}
+
+.credits {
+  height: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  /* visibility: hidden; */
+}
+
+.active-credits {
+  visibility: visible;
+}
+
+.para-credits,
+.link-credits {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(232, 234, 237, 1);
+}
+
+.link-credits:link {
+  color: rgba(232, 234, 237, 1);
+  text-decoration: underline;
+}
+
+.link-credits:visited {
+  color: rgba(232, 234, 237, 1);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1300ms;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
