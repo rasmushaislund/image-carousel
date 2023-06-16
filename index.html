@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✼ Image carousel ✼</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="body-carousel">
+    <p class="para-author">
+      Created by
+      <a
+        class="github-link"
+        target="_blank"
+        href="https://github.com/rasmushaislund"
+        >Rasmus H.
+        <img
+          class="github-logo"
+          src="./img/github-logo-white.svg"
+          alt="github logo"
+      /></a>
+    </p>
+    <div class="frame">
+      <svg
+        class="arrow previous"
+        xmlns="http://www.w3.org/2000/svg"
+        height="60"
+        viewBox="-250 -960 960 960"
+        width="50"
+      >
+        <path
+          class="arrow previous"
+          d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"
+        />
+      </svg>
+      <div class="album" data-album>
+        <img
+          class="slider-img fade"
+          src="./img/bridge.jpg"
+          alt="bridge"
+          data-album-img
+        />
+        <img
+          class="slider-img fade"
+          src="./img/field.jpg"
+          alt="field"
+          data-album-img
+        />
+        <img
+          class="slider-img fade"
+          src="./img/flower.jpg"
+          alt="flower"
+          data-album-img
+        />
+        <img
+          class="slider-img fade"
+          src="./img/lion.jpg"
+          alt="lion"
+          data-album-img
+        />
+        <img
+          class="slider-img fade"
+          src="./img/trees.jpg"
+          alt="trees"
+          data-album-img
+        />
+        <img
+          class="slider-img fade"
+          src="./img/mountains.jpg"
+          alt="mountains"
+          data-album-img
+        />
+        <img
+          class="slider-img fade"
+          src="./img/elephant.jpg"
+          alt="elephant"
+          data-album-img
+        />
+      </div>
+      <svg
+        class="arrow next"
+        xmlns="http://www.w3.org/2000/svg"
+        height="60"
+        viewBox="-30 -960 960 960"
+        width="50"
+      >
+        <path
+          class="arrow next"
+          d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"
+        />
+      </svg>
+    </div>
+    <div class="credits fade" data-credits>
+      <p class="para-credits">
+        Photo by
+        <a href="" target="_blank" class="link-credits"></a>
+      </p>
+    </div>
+    <div class="image-nav" data-nav></div>
+  </body>
+</html>
